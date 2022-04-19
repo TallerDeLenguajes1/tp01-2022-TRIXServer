@@ -6,7 +6,7 @@ int *pnum;
 int main(int argc, char const *argv[])
 {
     num = 56;
-    pnum = num;
+    pnum = &num;
 
     printf("&f", pnum);
 
