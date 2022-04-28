@@ -1,0 +1,5 @@
+#ignore file
+ignorado.txt
+
+#ignored extensions
+*.exe
