@@ -29,7 +29,7 @@ int main(int argc, char const *argv[])
     
     calcularCuadradodeNuevo(pNumero);
     printf("--\n");
-    printf("El cuadrado calculado con puntero es %d\n", * pNumero);
+    printf("El cuadrado calculado con puntero es: %d\n", * pNumero);
 
     printf("--\n");
     mostrarContenidoyDireccion(pNumero);
@@ -44,11 +44,14 @@ int main(int argc, char const *argv[])
     pB = &b;
     
     invertir(pA, pB);
-    printf("Numero a: \t%d\n", a);
-    printf("Numero b: \t%d\n", b);
-        
     printf("--\n");
+    printf("Invertidos\n");
+    printf("Numero a: \t\t%d\n", a);
+    printf("Numero b: \t\t%d\n", b);
+        
     orden(pA, pB);
+    printf("--\n");
+    printf("Ordenados\n");
     printf("Primer Numero: \t\t%d\n", a);
     printf("Segundo Numero: \t%d\n", b);
 
@@ -69,8 +72,8 @@ void calcularCuadradodeNuevo(int * num)
 
 void mostrarContenidoyDireccion(int * num)
 {
-    printf("Contenido de la variable %d\n", * num);
-    printf("Direccion de la variable %p\n", num);
+    printf("Contenido de la variable: %d\n", * num);
+    printf("Direccion de la variable: %p\n", num);
 
 }
 
